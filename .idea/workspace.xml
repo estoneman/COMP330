@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="11df28b2-7b7d-4d3d-ab53-651cf6d9a5de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/HelloWorld.java" afterDir="false" />
     </list>
+=======
+<<<<<<< HEAD
+    <list default="true" id="11df28b2-7b7d-4d3d-ab53-651cf6d9a5de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+=======
+    <list default="true" id="11df28b2-7b7d-4d3d-ab53-651cf6d9a5de" name="Default Changelist" comment="" />
+>>>>>>> d9d7ec750e157725e353f42543faa649fc0f1281
+>>>>>>> 34b10ca181d1752d4491c0da57a859db976a0677
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,16 +27,21 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/src/HelloWorld.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="45">
               <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
               <folding>
                 <element signature="e#67#68#0" expanded="true" />
                 <element signature="e#96#97#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="105">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+>>>>>>> 34b10ca181d1752d4491c0da57a859db976a0677
             </state>
           </provider>
         </entry>
@@ -52,8 +67,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -65,6 +78,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -96,8 +111,21 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
+=======
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+<<<<<<< HEAD
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" visible="true" weight="0.32962668" />
@@ -107,7 +135,29 @@
       <window_info id="Resources Explorer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
+=======
+>>>>>>> d9d7ec750e157725e353f42543faa649fc0f1281
+    <layout>
+>>>>>>> 34b10ca181d1752d4491c0da57a859db976a0677
       <window_info id="Captures" order="0" weight="0.25" />
+<<<<<<< HEAD
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23537703" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Resources Explorer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32921812" />
+      <window_info anchor="bottom" id="TODO" order="1" weight="0.32921812" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Assistant" order="3" weight="0.33476394" />
+=======
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="TODO" />
       <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32892805" />
@@ -115,6 +165,7 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Palette&#9;" />
+>>>>>>> d9d7ec750e157725e353f42543faa649fc0f1281
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -131,12 +182,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="45">
           <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
           <folding>
             <element signature="e#67#68#0" expanded="true" />
             <element signature="e#96#97#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="105">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+>>>>>>> 34b10ca181d1752d4491c0da57a859db976a0677
         </state>
       </provider>
     </entry>
