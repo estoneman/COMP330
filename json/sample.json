@@ -1,7 +1,11 @@
 
-{
-  "t/f : "
+[
+  {
+    "t/f" : {
+            "this class is hard": "true",
+            "iPhone is the best": "true",
+            "cookies are bad": "false"
+    }
+  }
 
-
-
-}
+]
