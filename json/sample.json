@@ -1,11 +1,28 @@
 
 [
   {
-    "t/f" : {
+    "tf" : {
             "this class is hard": "true",
             "iPhone is the best": "true",
             "cookies are bad": "false"
     }
-  }
+  },
 
+  {
+    "mc" : {
+
+    }
+  },
+
+  {
+    "fb" : {
+
+    }
+  },
+
+  {
+    "m" : {
+
+    }
+  }
 ]
