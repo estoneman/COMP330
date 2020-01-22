@@ -1,11 +1,35 @@
 
 [
   {
-    "t/f" : {
+    "tf" : {
             "this class is hard": "true",
             "iPhone is the best": "true",
             "cookies are bad": "false"
     }
-  }
+  },
 
+  {
+    "mc" : {
+            "question" : "What is 2 + 2?",
+            "options" : [
+              "1",
+              "2",
+              "4",
+              "8"
+            ],
+            "answer" : "4"
+    }
+  },
+
+  {
+    "fb" : {
+
+    }
+  },
+
+  {
+    "m" : {
+
+    }
+  }
 ]
