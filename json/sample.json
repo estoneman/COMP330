@@ -2,9 +2,12 @@
 [
   {
     "lastName1": "stoneman",
-    "lastName2": "dimonte",
+    "lastName2": "dimonte"
+  },
+
+  {
     "tf" : {
-            "this class is hard": "true",
+            "this class is fun": "true",
             "iPhone is the best": "true",
             "cookies are bad": "false"
     }
@@ -19,19 +22,36 @@
               "4",
               "8"
             ],
-            "answer" : "4"
+            "answers" : "4"
     }
   },
 
   {
     "fb" : {
-
+            "question" : "What does the c stand for in cs?",
+            "answers" : "computer",
+            "question" : "What building is class in?",
+            "answers" : "Dumbach"
     }
   },
 
   {
     "m" : {
-
+          "question" : "Match each city with the appropriate country:",
+          "options" : [
+            "London",
+            "Paris",
+            "Athens",
+            "Moscow",
+            "Madrid"
+          ],
+          "answers" : [
+            "Great Britain",
+            "France",
+            "Greece",
+            "Russia",
+            "Spain"
+          ]
     }
   }
 ]
