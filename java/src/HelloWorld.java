@@ -1,4 +1,4 @@
-git import org.json.simple.JSONArray;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import java.io.FileReader;
 import org.json.simple.parser.*;
@@ -15,7 +15,8 @@ class HelloWorld {
     public static void main(String[] args) {
 
         try {
-
+            System.out.println("hello world");
+        }
         catch(Exception e) {
             System.out.println(e);
 
