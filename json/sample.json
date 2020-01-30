@@ -1,10 +1,23 @@
 
 {
-  "tf" : {
 
-          "iPhone is the best": "true",
-          "cookies are bad": "false"
-  },
+  "tf" : [
+    {
+      "q" : "The sun is hot",
+      "a" : "True"
+    },
+    {
+      "q" : "This class is COMP330",
+      "a" : "True"
+    }
+  ],
+
+
+
+
+
+
+
 
   "mc" : {
           "question" : "What is 2 + 2?",
