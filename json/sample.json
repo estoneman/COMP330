@@ -1,57 +1,45 @@
 
-[
-  {
-    "lastName1": "stoneman",
-    "lastName2": "dimonte"
+{
+  "tf" : {
+
+          "iPhone is the best": "true",
+          "cookies are bad": "false"
   },
 
-  {
-    "tf" : {
-            "this class is fun": "true",
-            "iPhone is the best": "true",
-            "cookies are bad": "false"
-    }
-  },
-
-  {
-    "mc" : {
-            "question" : "What is 2 + 2?",
-            "options" : [
-              "1",
-              "2",
-              "4",
-              "8"
-            ],
-            "answers" : "4"
-    }
-  },
-
-  {
-    "fb" : {
-            "question" : "What does the c stand for in cs?",
-            "answers" : "computer",
-            "question" : "What building is class in?",
-            "answers" : "Dumbach"
-    }
-  },
-
-  {
-    "m" : {
-          "question" : "Match each city with the appropriate country:",
+  "mc" : {
+          "question" : "What is 2 + 2?",
           "options" : [
-            "London",
-            "Paris",
-            "Athens",
-            "Moscow",
-            "Madrid"
+            "1",
+            "2",
+            "4",
+            "8"
           ],
-          "answers" : [
-            "Great Britain",
-            "France",
-            "Greece",
-            "Russia",
-            "Spain"
-          ]
-    }
+          "answers" : "4"
+  },
+
+  "fb" : {
+          "question" : "What does the c stand for in cs?",
+          "answers" : "computer",
+          "question" : "What building is class in?",
+          "answers" : "Dumbach"
+  },
+
+  "m" : {
+        "question" : "Match each city with the appropriate country:",
+        "options" : [
+          "London",
+          "Paris",
+          "Athens",
+          "Moscow",
+          "Madrid"
+        ],
+        "answers" : [
+          "Great Britain",
+          "France",
+          "Greece",
+          "Russia",
+          "Spain"
+        ]
   }
-]
+}
+
