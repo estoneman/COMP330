@@ -3,6 +3,8 @@ import org.json.simple.JSONObject;
 import java.io.FileReader;
 import org.json.simple.parser.*;
 
+import java.util.*;
+
 //Inspriation from: https://www.geeksforgeeks.org/parse-json-java/
 
 //in order for these import statements to work I used the following linux command:
@@ -15,8 +17,23 @@ class HelloWorld {
     public static void main(String[] args) {
 
         try {
-            System.out.println("hello world");
+            Object obj = new JSONParser().parse(new FileReader("/Users/Ethan/AndroidStudioProjects/COMP330/json/sample.json"));
+
+            // typecasting obj to JSONObject
+            JSONObject jo = (JSONObject) obj;
+
+            JSONArray ja = (JSONArray) jo.get("tf");
+
+            Iterator iter = ja.iterator();
+
+            System.out.println(jo.names());
+
+//            while (iter.hasNext()) {
+//
+//            }
+
         }
+
         catch(Exception e) {
             System.out.println(e);
 
