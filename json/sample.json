@@ -5,24 +5,28 @@
   "last-name": "stoneman",
 
 
+
+  "last-name": "stoneman",
+
+
   "tf" : [
     {
       "q" : "The sun is hot",
       "a" : "True"
     },
     {
-      "q" : "This class is COMP330",
+      "q" : "This class is COMP331",
+      "a" : "False"
+    },
+    {
+      "q" : "This project is fun",
       "a" : "True"
+    },
+    {
+      "q" : "Loyola only has one campus",
+      "a" : "False"
     }
   ],
-
-
-
-
-
-
-
-
 
   "mc" : {
           "question" : "What is 2 + 2?",
