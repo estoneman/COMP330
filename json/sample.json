@@ -1,10 +1,7 @@
 
 {
-<<<<<<< HEAD
-=======
 
   "last-name": "stoneman",
->>>>>>> eab4be22ed82c859eef97903a6281ff3160930e8
 
   "tf" : [
     {
@@ -12,18 +9,18 @@
       "a" : "True"
     },
     {
-      "q" : "This class is COMP330",
+      "q" : "This class is COMP331",
+      "a" : "False"
+    },
+    {
+      "q" : "This project is fun",
       "a" : "True"
+    },
+    {
+      "q" : "Loyola only has one campus",
+      "a" : "False"
     }
   ],
-
-
-
-
-
-
-
-
 
   "mc" : {
           "question" : "What is 2 + 2?",
