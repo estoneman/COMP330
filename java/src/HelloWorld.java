@@ -12,7 +12,11 @@ import java.util.*;
 
 class HelloWorld {
 
-    private static HashMap<String, String> trueFalseHashMap = new HashMap<String, String>();
+    private static HashMap<String, String> trueFalseHashMap;
+
+    public HelloWorld() {
+        trueFalseHashMap = new HashMap<String, String>();
+    }
 
     private HashMap<String, String> populateHashmap() {
 
