@@ -36,13 +36,9 @@ class HelloWorld {
             //for separating questions and answers into their own index for easier parsing
             String[] questionAnswerArray;
 
-<<<<<<< HEAD
-            //System.out.println(jo.names());
-=======
             //iterates through the JSONArray and populates true false hash map
             while (iter.hasNext()) {
                 questionAnswerArray = parseTFObject(iter.next());
->>>>>>> 9ddf4507fa25c1fec1e081b31f509523041276cd
 
                 String question = questionAnswerArray[0].substring(5, questionAnswerArray[0].length() - 1);//gets rid of unneeded characters
                 String answer = questionAnswerArray[1].substring(5, questionAnswerArray[1].length() - 1);//gets rid of unneeded characters
