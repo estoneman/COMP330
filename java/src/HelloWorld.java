@@ -26,7 +26,7 @@ class HelloWorld {
 
             Iterator iter = ja.iterator();
 
-            System.out.println(jo.names());
+            //System.out.println(jo.names());
 
 //            while (iter.hasNext()) {
 //
