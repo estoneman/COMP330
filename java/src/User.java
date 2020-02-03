@@ -14,5 +14,12 @@ public class User {
         System.out.println("Select question type: tf, mc, fb, m, or all"); //eventually we want to only offer q's avaliable from json
         qType = keyboard.nextLine();
 
+        //make switch case statement for each qType
+
+
+
+
+        keyboard.close();
+
     }
 }
