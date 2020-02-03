@@ -18,6 +18,7 @@ class HelloWorld {
         trueFalseHashMap = new HashMap<String, String>();
     }
 
+    //time complexity of O(2n^2) (not 100% sure)
     private HashMap<String, String> populateHashmap() {
 
         try {
@@ -61,6 +62,7 @@ class HelloWorld {
 
     }
 
+    //time complexity of O(2n)
     private String[] parseTFObject(Object obj) {
         String objString = obj.toString();//converts iter.next() which is of type Object to String
         objString = objString.substring(1, objString.length() - 1);//gets rid of leading and trailing braces in string
