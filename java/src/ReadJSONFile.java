@@ -10,11 +10,11 @@ import java.util.*;
 //in order for these import statements to work I used the following linux command:
 //export CLASSPATH=$CLASSPATH:/path/to/json-simple.jar/file
 
-class HelloWorld {
+class ReadJSONFile {
 
     private static HashMap<String, String> trueFalseHashMap;
 
-    public HelloWorld() {
+    public ReadJSONFile() {
         trueFalseHashMap = new HashMap<String, String>();
     }
 
