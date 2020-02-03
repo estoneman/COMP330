@@ -12,10 +12,12 @@ import java.util.*;
 
 class ReadJSONFile {
 
-    private static HashMap<String, String> trueFalseHashMap;
+    //only one hash map to read in data from the json file
+    private static HashMap<String, String> JSONHashMap;
 
+    //default constructor to initialize the hash map with no key, value pairs
     public ReadJSONFile() {
-        trueFalseHashMap = new HashMap<String, String>();
+        JSONHashMap = new HashMap<String, String>();
     }
 
     //time complexity of O(2n^2) (not 100% sure)
@@ -29,36 +31,46 @@ class ReadJSONFile {
             // typecasting obj to JSONObject in order to use JSONSimple library
             JSONObject jsonObject = (JSONObject) fileRead;
 
-            //getting our T/F question; in this case we stored the question and answers as array
+            //getting our  questions; in this case we stored the question and answers as array
             JSONArray trueFalseArray = (JSONArray) jsonObject.get("tf");
+            JSONArray fillInBlankArray = (JSONArray) jsonObject.get("fb");
 
-            //to iterate through objects in array of t/f
-            Iterator<?> iter = trueFalseArray.iterator();
-
-            //for accessing the objects inside trueFalseArray and converting to Strings
-            //for the purpose of parsing by indexing of each String element
-            String questionAnswerPair;
+            //to iterate through objects in array of t/f and fill in the blank
+            Iterator<?> tfIter = trueFalseArray.iterator();//true false iterator
+            Iterator<?> fbIter = fillInBlankArray.iterator();//fill in the blank iterator
 
             //for separating questions and answers into their own index for easier parsing
             String[] questionAnswerArray;
 
-            //iterates through the JSONArray and populates true false hash map
-            while (iter.hasNext()) {
-                questionAnswerArray = parseTFObject(iter.next());
+            //iterates through the true false section of the json file
+            while (tfIter.hasNext()) {
+                questionAnswerArray = parseTFObject(tfIter.next());
 
                 String question = questionAnswerArray[0].substring(5, questionAnswerArray[0].length() - 1);//gets rid of unneeded characters
                 String answer = questionAnswerArray[1].substring(5, questionAnswerArray[1].length() - 1);//gets rid of unneeded characters
 
-                trueFalseHashMap.put(question, answer);//populates the hash map with correct values
+                JSONHashMap.put(question, answer);//populates the hash map with correct values
+            }
+
+            //iterates through fill in the blank section of the json file
+            while (fbIter.hasNext()) {
+                questionAnswerArray = parseTFObject(fbIter.next());
+
+                String question = questionAnswerArray[0].substring(5, questionAnswerArray[0].length() - 1);//gets rid of unneeded characters
+                String answer = questionAnswerArray[1].substring(5, questionAnswerArray[1].length() - 1);//gets rid of unneeded characters
+
+                JSONHashMap.put(question, answer);//populates the hash map with correct values
             }
 
         }
 
+        //for the purpose of handling if the json file cannot be found mostly
+        //however, other exceptions can be caught, such as NullPointerException
         catch(Exception e) {
             System.out.println(e);
         }
 
-        return trueFalseHashMap;//populated hash map with questions and answers of the true false section in json file
+        return JSONHashMap;//populated hash map with questions and answers of the true false section in json file
 
     }
 
