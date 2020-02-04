@@ -11,3 +11,5 @@ First, you must have installed a [JVM (Java Virtual Machine)](https://www.java.c
 ```bash
 export CLASSPATH=$CLASSPATH:/path/to/jar
 ```
+
+You should now be able to run this program in whichever way suits you (i.e. IDE, command line, shell, etc)
