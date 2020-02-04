@@ -13,7 +13,7 @@ import java.util.*;
 class ReadJSONFile {
 
     //only one hash map to read in data from the json file
-    private static HashMap<String, String> JSONHashMap;
+    private HashMap<String, String> JSONHashMap;
 
     //default constructor to initialize the hash map with no key, value pairs
     public ReadJSONFile() {
