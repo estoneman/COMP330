@@ -21,7 +21,7 @@ class ReadJSONFile {
     }
 
     //time complexity of O(2n^2) (not 100% sure)
-    private HashMap<String, String> populateHashmap() {
+    public HashMap<String, String> populateHashmap() {
 
         try {
             //read json file into this class in order to parse
@@ -75,7 +75,7 @@ class ReadJSONFile {
     }
 
     //time complexity of O(2n)
-    private String[] parseTFObject(Object obj) {
+    public String[] parseTFObject(Object obj) {
         String objString = obj.toString();//converts iter.next() which is of type Object to String
         objString = objString.substring(1, objString.length() - 1);//gets rid of leading and trailing braces in string
         String[] result = objString.split(",");//puts elements into their own index for easier parsing
