@@ -81,5 +81,9 @@ class ReadJSONFile {
     }
 
     //get key and value pair
+    public HashMap<String, String> getJSONHashMap() {
+        return JSONHashMap;
+    }
+
 
 }
