@@ -12,16 +12,8 @@ import java.util.*;
 
 class ReadJSONFile {
 
-    //only one hash map to read in data from the json file
-    private HashMap<String, String> JSONHashMap;
-
-    //default constructor to initialize the hash map with no key, value pairs
-    public ReadJSONFile() {
-        JSONHashMap = new HashMap<String, String>();
-    }
-
     //time complexity of O(2n^2) (not 100% sure)
-    public HashMap<String, String> populateHashmap() {
+    public static HashMap<String, String> populateHashMap(HashMap<String, String> JSONHashMap) {
 
         try {
             //read json file into this class in order to parse
@@ -75,11 +67,17 @@ class ReadJSONFile {
     }
 
     //time complexity of O(2n)
-    public String[] parseTFObject(Object obj) {
+    public static String[] parseTFObject(Object obj) {
         String objString = obj.toString();//converts iter.next() which is of type Object to String
         objString = objString.substring(1, objString.length() - 1);//gets rid of leading and trailing braces in string
         String[] result = objString.split(",");//puts elements into their own index for easier parsing
         return result;
+    }
+
+    public static void main(String[] args) {
+        HashMap<String, String> hm = new HashMap<String, String>();
+        hm = populateHashMap(hm);
+        System.out.println(hm);
     }
 
     //get key and value pair
