@@ -5,7 +5,8 @@
 
 import java.util.Scanner;
 
-public class User extends ReadJSONFile {
+//public class User extends ReadJSONFile {
+public class User  {
 
 //    ReadJSONFile readJSONFile = new ReadJSONFile();
 //    private HashMap<String, String> JSONHashMap;
@@ -16,7 +17,7 @@ public class User extends ReadJSONFile {
 //        ReadJSONFile readJSONFile = new ReadJSONFile();
 
         String name; //for scoring
-        String qType; //(tf,mc,fb,m, or all)
+        String qType = null; //(tf,mc,fb,m, or all)
         String userChoice; //between (A)Create a quiz or (B)Take a quiz
 
         Scanner keyboard = new Scanner(System.in);
@@ -26,12 +27,12 @@ public class User extends ReadJSONFile {
         System.out.println("Would you like to (A)Create a quiz or (B)Take a quiz?"); //or (C)Exit
         userChoice = keyboard.nextLine();
 
-        if userChoice.equalsIgnoreCase("A") {
+        if (userChoice.equalsIgnoreCase("A")) {
             //Ask reader for q's and a's and format them into JSON file
 
         }
 
-        if userChoice.equalsIgnoreCase("B") {
+        if (userChoice.equalsIgnoreCase("B")) {
             System.out.println("Select question type: tf, mc, fb, m, or all");
             //eventually we want to only offer q types avaliable from json
             //and allow users to select multiple q types to form their own quiz, ex tf + fb
@@ -41,6 +42,9 @@ public class User extends ReadJSONFile {
             //check if case sensitive!
             switch (qType) {
                 case "tf":
+                    //test
+                    System.out.println("Succesfully chose qType tf");
+
                     //get tf from hashmap
                     break;
 
@@ -60,9 +64,14 @@ public class User extends ReadJSONFile {
 
 //        JSONHashMap = new HashMap<String, String>();
 
-        System.out.println(JSONHashmap);
+        //test hashmap
+        //System.out.println(JSONHashmap);
 
 
+        //test keyboard
+        System.out.println(name);
+        System.out.println(userChoice);
+        System.out.println(qType);
 
         keyboard.close();
 
