@@ -1,13 +1,12 @@
-<<<<<<< HEAD
+
 import java.util.*;
-=======
+
 //import org.json.simple.JSONArray;
 //import org.json.simple.JSONObject;
 //import java.io.FileReader;
 //import org.json.simple.parser.*;
 
 import java.util.Scanner;
->>>>>>> 3a8fa28a7f878879c036d3ba6a1d6cb265771f4e
 
 //public class User extends ReadJSONFile {
 public class User  {
@@ -71,15 +70,11 @@ public class User  {
         //test hashmap
         //System.out.println(JSONHashmap);
 
-<<<<<<< HEAD
-=======
-
         //test keyboard
         System.out.println(name);
         System.out.println(userChoice);
         System.out.println(qType);
 
->>>>>>> 3a8fa28a7f878879c036d3ba6a1d6cb265771f4e
         keyboard.close();
 
     }
