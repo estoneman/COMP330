@@ -17,8 +17,8 @@ class ReadJSONFile {
 
         try {
             //read json file into this class in order to parse
-            Object fileRead = new JSONParser().parse(new FileReader("/Users/Ethan/AndroidStudioProjects/COMP330/json/sample.json"));
-            //Object fileRead = new JSONParser().parse(new FileReader("/Users/thomasdimonte/StudioProjects/COMP330/json/sample.json"));
+            Object fileRead = new JSONParser().parse(new FileReader("/Users/Ethan/AndroidStudioProjects/COMP330/json/trueFalse.json"));
+            //Object fileRead = new JSONParser().parse(new FileReader("/Users/thomasdimonte/StudioProjects/COMP330/json/trueFalse.json"));
 
             // typecasting obj to JSONObject in order to use JSONSimple library
             JSONObject jsonObject = (JSONObject) fileRead;
@@ -81,9 +81,9 @@ class ReadJSONFile {
     }
 
     //get key and value pair
-    public HashMap<String, String> getJSONHashMap() {
-        return JSONHashMap;
-    }
+//    public HashMap<String, String> getJSONHashMap() {
+//        return JSONHashMap;
+//    }
 
 
 }
