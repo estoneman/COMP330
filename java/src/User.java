@@ -33,7 +33,6 @@ public class User  {
         if (userChoice.equalsIgnoreCase("A")) {
             //Ask reader for q's and a's and format them into JSON file
             JSONObject trueFalseQuestionDetails = new JSONObject();//
-            JSONObject tFQuestionObject = new JSONObject();
             JSONObject mCQuestionDetails;
             JSONObject mCQuestionObject = new JSONObject();
             JSONArray mCArray = new JSONArray();
