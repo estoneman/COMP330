@@ -1,8 +1,14 @@
 import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
+//writer
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
+//reader
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 //https://howtodoinjava.com/library/json-simple-read-write-json-examples/
 
@@ -26,6 +32,20 @@ public class User  {
         Scanner keyboard = new Scanner(System.in);
 //        System.out.println("Please enter your name: ");
 //        name = keyboard.nextLine();
+
+
+        //Sample tf question arrayList for testing
+        //questions in reader will be stored in an arraylist as questionA, answerA, questionB, answerB...
+        ArrayList<String> qList = new ArrayList<String>();
+        qList.add("The sun is hot");
+        qList.add("True");
+        qList.add("The sun is cold");
+        qList.add("false");
+
+        int score;
+        String userA = null;
+
+
 
         System.out.println("Would you like to (A)Create a quiz or (B)Take a quiz?"); //or any other letter to exit
         userChoice = keyboard.nextLine();
@@ -183,8 +203,17 @@ public class User  {
 
         }
 
+
+
+
+
         if (userChoice.equalsIgnoreCase("B")) {
+
+            score = 0;
+
             System.out.println("Select question type: tf, mc, fb, m, or all");
+            //currently TakeQuiz only works with option "all" and questions.json
+
             //eventually we want to only offer q types avaliable from json
             //and allow users to select multiple q types to form their own quiz, ex tf + fb
             qType = keyboard.nextLine();
@@ -192,25 +221,52 @@ public class User  {
             //switch case statement for each qType
             //check if case sensitive!
             switch (qType) {
-                case "tf":
-                    //test
-                    System.out.println("Succesfully chose qType tf");
+                    case "tf":
+                        //test list
+                        System.out.println("Answer true or false: ");
+                        for (int i = 0; i <= qList.size()-1; i++) {
+                            System.out.println(qList.get(i));
 
-                    //get tf from hashmap
-                    break;
+                            userA = keyboard.nextLine();
 
-                case "mc":
-                    //get mc from hashmap
-                    break;
+                            //i is added to switch to answer for check
+                            i++;
 
-                case "fb":
-                    //get fb from hashmap
-                    break;
+                            if (userA.equalsIgnoreCase(qList.get(i))) {
+                                score++;
+                            }
 
-                case "m":
-                    //get m from hashmap
-                    break;
-            }
+
+                        }
+
+                        System.out.println("Your score = " + score);
+                        System.out.println("Quiz key:");
+                        System.out.println(qList);
+
+
+
+                        //get tf arraylist
+                        break;
+
+                    case "mc":
+                        //get mc arraylist
+                        break;
+
+                    case "fb":
+                        //get fb arraylist
+                        break;
+
+                    case "m":
+                        //get m arraylist
+                        break;
+
+                    case "all":
+                        //iterate through each list
+                        //state which type of question list before asking new question list
+
+                        break;
+                }
+
         }
 
         else {
