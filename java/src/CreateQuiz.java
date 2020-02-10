@@ -36,6 +36,8 @@ public class CreateQuiz {
 
         int loopCounter;//for number of options for multiple choice
 
+        ArrayList<String> arrayList;
+
         while (creating) {
             loopCounter = 0;
 
@@ -81,29 +83,45 @@ public class CreateQuiz {
                     questionArray = new JSONArray();
                     questionObject = new JSONObject();
 
+                    arrayList = new ArrayList<String>();
+
                     while (creatingMultipleChoice) {
                         questionDetails = new JSONObject();
                         creatingOptions = true;
+
                         System.out.println("Enter the multiple choice question you would like to add\nEnter 'quit' to stop adding multiple choice questions: ");
                         question = keyboard.nextLine();
+
+                        multipleChoiceKeyString = question;
 
                         if (question.equalsIgnoreCase("quit"))
                             creatingMultipleChoice = false;
 
                         else {
                             while (creatingOptions) {
+
                                 System.out.println("Enter option or enter nothing to stop adding options: ");
                                 option = keyboard.nextLine();
+
+                                arrayList.add(option);
 
                                 if (option.equals(""))
                                     creatingOptions = false;
                                 else {
-                                    multipleChoiceKeyString = question + " " + option;
+                                    multipleChoiceKeyString += " " + option;
                                 }
                             }
 
+                            System.out.println(multipleChoiceKeyString);
+
                             System.out.println("Enter the answer to '" + question + "': ");
                             answer = keyboard.nextLine();
+
+                            //makes sure the user enters an answer that is part of the option set
+                            while (!arrayList.contains(answer)) {
+                                System.out.println(answer + " is not in the option set, enter the answer again: ");
+                                answer = keyboard.nextLine();
+                            }
 
                             questionDetails.put(multipleChoiceKeyString, answer);
                             questionArray.add(questionDetails);
@@ -117,10 +135,39 @@ public class CreateQuiz {
                     break;
 
                 case "fb":
+                    //these two lines avoids any duplicate strings to be written to json files by emptying the contents each time a new question set is created
+                    questionArray = new JSONArray();
+                    questionObject = new JSONObject();
 
+                    while (creatingFillInBlank) {
+
+                        questionDetails = new JSONObject();//initializes the JSONObject to be added to the JSONArray so there are no duplicate objects
+                        System.out.println("Enter the fill-in-the-blank question\nEnter 'quit' when finished: ");
+                        question = keyboard.nextLine();
+
+                        if (question.equalsIgnoreCase("quit"))
+                            creatingFillInBlank = false;
+
+                        else {
+                            System.out.println("Type the answer to '" + question + "': ");
+                            answer = keyboard.nextLine();
+
+                            questionDetails.put(question, answer);//packs the question and answer into its own unique JSONObject
+                            questionArray.add(questionDetails);//adds the above JSONObject to an array of JSONObjects
+
+                        }
+
+                    }
+
+                    questionObject.put(qType, questionArray);//puts the key as "tf" and the value as the JSONArray of JSONObjects with questions and answer as key, value pair
+
+                    writeToFile(FILL_IN_BLANK_PATH, questionObject);
                     break;
 
                 case "m":
+
+                    questionArray = new JSONArray();
+                    questionObject = new JSONObject();
 
                     break;
 
