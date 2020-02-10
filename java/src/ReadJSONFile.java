@@ -17,11 +17,13 @@ class ReadJSONFile {
 
         try {
             //read json file into this class in order to parse
-            Object fileRead = new JSONParser().parse(new FileReader("/Users/Ethan/AndroidStudioProjects/COMP330/json/trueFalse.json"));
-            //Object fileRead = new JSONParser().parse(new FileReader("/Users/thomasdimonte/StudioProjects/COMP330/json/trueFalse.json"));
+            //Object fileRead = new JSONParser().parse(new FileReader("/Users/Ethan/AndroidStudioProjects/COMP330/json/trueFalse.json"));
+            Object fileRead = new JSONParser().parse(new FileReader("/Users/thomasdimonte/StudioProjects/COMP330/json/questions.json"));
 
             // typecasting obj to JSONObject in order to use JSONSimple library
             JSONObject jsonObject = (JSONObject) fileRead;
+
+            System.out.println("fileRead created");
 
             //getting our  questions; in this case we stored the question and answers as array
             JSONArray trueFalseArray = (JSONArray) jsonObject.get("tf");
@@ -59,6 +61,7 @@ class ReadJSONFile {
         //for the purpose of handling if the json file cannot be found mostly
         //however, other exceptions can be caught, such as NullPointerException
         catch(Exception e) {
+            System.out.println("reached exception");
             System.out.println(e);
         }
 
@@ -78,6 +81,7 @@ class ReadJSONFile {
         HashMap<String, String> hm = new HashMap<String, String>();
         hm = populateHashMap(hm);
         System.out.println(hm);
+        System.out.println("reached end of main");
     }
 
     //get key and value pair

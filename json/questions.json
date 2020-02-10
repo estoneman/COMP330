@@ -1,7 +1,15 @@
-{
-  "tf" : [
-    {
-      "the sun is hot" : "true"
+[
+  {
+    "tf": {
+      "q": "The sun is hot",
+      "a": "True"
     }
-  ]
-}
+  },
+  {
+    "tf": {
+      "q": "The sun is cold",
+      "a": "False"
+    }
+  }
+]
+
