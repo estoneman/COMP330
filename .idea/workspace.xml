@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11df28b2-7b7d-4d3d-ab53-651cf6d9a5de" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/CreateQuiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/CreateQuiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/CreateQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/CreateQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/ReadJSONFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/ReadJSONFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/ReadJSONFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/ReadJSONFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/TakeQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/TakeQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/fillInBlank.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/fillInBlank.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/multipleChoice.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/multipleChoice.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/questions.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/questions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/trueFalse.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/trueFalse.json" afterDir="false" />
+>>>>>>> 511969043211f4aecf6edf8073faa24a2c806bc6
+>>>>>>> a16d285dd5bb13c558b387885025280e05fbb6ac
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +35,61 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf />
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/CreateQuiz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1163">
+              <caret line="123" column="29" lean-forward="true" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8823#8824#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="233" selection-start-line="233" selection-end-line="233" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json/multipleChoice.json">
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 511969043211f4aecf6edf8073faa24a2c806bc6
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3179">
+              <caret line="187" column="12" selection-start-line="187" selection-start-column="12" selection-end-line="187" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/src/TakeQuiz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> a16d285dd5bb13c558b387885025280e05fbb6ac
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -135,7 +209,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+=======
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+>>>>>>> 511969043211f4aecf6edf8073faa24a2c806bc6
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32980832" />
@@ -208,6 +286,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json/trueFalse.json">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="354">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
+=======
         <state>
           <caret column="62" lean-forward="true" selection-start-column="62" selection-end-column="62" />
         </state>
@@ -217,6 +299,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1163">
           <caret line="123" column="29" lean-forward="true" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+>>>>>>> 511969043211f4aecf6edf8073faa24a2c806bc6
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#8823#8824#0" expanded="true" />
