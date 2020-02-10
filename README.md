@@ -6,10 +6,14 @@ question correct. As of right now, we are continually working on reading in true
 ## Getting Started
 In order to run the startings of our code on your system, there are a few things you must do.
 ### Prerequisites
-First, you must have installed a [JVM (Java Virtual Machine)](https://www.java.com/en/) installed as well as the library we are using to parse our json file called [JSON-SIMPLE](http://www.java2s.com/Code/Jar/j/Downloadjsonsimple11jar.htm). Ideally, you will have downloaded the JSON-SIMPLE library and saved it under an easily accessible directory. Once you have downloaded the two, you must append to your machine's CLASSPATH environment variable with the following command:
+First, you must have installed a [JVM (Java Virtual Machine)](https://www.java.com/en/) installed as well as the library we are using to parse our json file called [JSON-SIMPLE](http://www.java2s.com/Code/Jar/j/Downloadjsonsimple11jar.htm). Ideally, you will have downloaded the JSON-SIMPLE library and saved it under an easily accessible directory. Once you have downloaded the two, you must append to your machine's CLASSPATH environment variable with the following commands:
+
+This for linux systems:
 
 ```bash
 export CLASSPATH=$CLASSPATH:/path/to/jar
 ```
+
+For Windows systems, simply navigate to the start menu and right-click on the Windows icon. Click on 'Search' and type in 'environment variables' and press enter. Once you have done that, a window will pop up with many options. Click on the button that says 'Environment Variables'. Next, navigate to system variables and click 'New'. The 'Variable name' will be 'CLASSPATH' and the 'Variable value' will be the path to which you saved JSON-Simple to. Once you are finished, continually click 'Ok' on each window as they disappear. You may need to restart your system in order for the changes to be set.
 
 The path to jar means that you need to replace '/path/to/jar' with the path to the location where you saved the .jar file. You should now be able to run this program in whichever way suits you (i.e. IDE, command line, shell, etc)
