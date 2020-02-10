@@ -11,7 +11,7 @@ public class CreateQuiz {
     String FILL_IN_BLANK_PATH = "/Users/Ethan/StudioProjects/COMP330/json/fillInBlank.json";
     String MATCHING_PATH = "/Users/Ethan/StudioProjects/COMP330/json/matching.json";
 
-    FileWriter fileWriter;//single file writer that writes to all types of json files
+    FileWriter fileWriter;//single file writer that writes to all of our json files
 
     Scanner keyboard = new Scanner(System.in);
 
@@ -47,7 +47,10 @@ public class CreateQuiz {
 
             switch (qType) {
                 case "tf":
+                    //these two lines avoids any duplicate strings to be written to json files by emptying the contents each time a new question set is created
                     questionArray = new JSONArray();
+                    questionObject = new JSONObject();
+
                     while (creatingTrueFalse) {
 
                         questionDetails = new JSONObject();//initializes the JSONObject to be added to the JSONArray so there are no duplicate objects
@@ -74,7 +77,10 @@ public class CreateQuiz {
                     break;
 
                 case "mc":
+                    //these two lines avoids any duplicate strings to be written to json files by emptying the contents each time a new question set is created
                     questionArray = new JSONArray();
+                    questionObject = new JSONObject();
+
                     while (creatingMultipleChoice) {
                         questionDetails = new JSONObject();
                         creatingOptions = true;
