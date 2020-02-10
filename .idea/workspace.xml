@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11df28b2-7b7d-4d3d-ab53-651cf6d9a5de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/ReadJSONFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/ReadJSONFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/ReadJSONFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/ReadJSONFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/TakeQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/TakeQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/questions.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/questions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/src/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="222" column="24" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="24" />
+            <state relative-caret-position="354">
+              <caret line="233" selection-start-line="233" selection-end-line="233" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,7 +180,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32980973" />
@@ -274,8 +267,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="222" column="24" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="24" />
+        <state relative-caret-position="354">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
