@@ -13,7 +13,7 @@ public class CreateQuiz {
 
     FileWriter fileWriter;//single file writer that writes to all of our json files
 
-    Scanner keyboard = new Scanner(System.in);
+    Scanner keyboard = new Scanner(System.in);//for accessing user input via keyboard
 
     //method that asks user for input
     @SuppressWarnings("unchecked")
@@ -28,11 +28,8 @@ public class CreateQuiz {
         String multipleChoiceKeyString = "";
 
         boolean creating = true;//loop control for the entire creating process
-        boolean creatingTrueFalse = true;//loop control for creating true false questions
-        boolean creatingMultipleChoice = true;//loop control for creating multiple choice questions
+        boolean creatingQuestion = true;//loop control for creating each question
         boolean creatingOptions = true;//loop control for creating options in multiple choice questions
-        boolean creatingFillInBlank = true;//loop control for creating fill in the blank questions
-        boolean creatingMatching = true;//loop control for creating matching questions
 
         int loopCounter;//for number of options for multiple choice
 
@@ -40,6 +37,8 @@ public class CreateQuiz {
 
         while (creating) {
             loopCounter = 0;
+
+            creatingQuestion = true;
 
             System.out.println("What kind of question would you like to add?\n1. tf\n2. mc\n3. fb\n4. m");
             qType = keyboard.nextLine();
@@ -53,7 +52,7 @@ public class CreateQuiz {
                     questionArray = new JSONArray();
                     questionObject = new JSONObject();
 
-                    while (creatingTrueFalse) {
+                    while (creatingQuestion) {
 
                         questionDetails = new JSONObject();//initializes the JSONObject to be added to the JSONArray so there are no duplicate objects
                         System.out.println("Enter the true/false question you would like to add\nEnter 'quit' to stop adding true/false questions: ");
@@ -61,7 +60,7 @@ public class CreateQuiz {
 
                         //user will get out of creating true false questions if they enter 'quit' so they have full control
                         if (question.equalsIgnoreCase("quit"))
-                            creatingTrueFalse = false;
+                            creatingQuestion = false;
 
                         else {
                             System.out.println("Type the answer to '" + question + "': ");
@@ -86,7 +85,7 @@ public class CreateQuiz {
 
                     arrayList = new ArrayList<String>();//for checking duplicate options
 
-                    while (creatingMultipleChoice) {
+                    while (creatingQuestion) {
                         questionDetails = new JSONObject();
                         creatingOptions = true;
 
@@ -97,7 +96,7 @@ public class CreateQuiz {
                         multipleChoiceKeyString = question;
 
                         if (question.equalsIgnoreCase("quit"))
-                            creatingMultipleChoice = false;
+                            creatingQuestion = false;
 
                         else {
                             //controls how many options the user wants to create
@@ -140,14 +139,14 @@ public class CreateQuiz {
                     questionArray = new JSONArray();
                     questionObject = new JSONObject();
 
-                    while (creatingFillInBlank) {
+                    while (creatingQuestion) {
 
                         questionDetails = new JSONObject();//initializes the JSONObject to be added to the JSONArray so there are no duplicate objects
                         System.out.println("Enter the fill-in-the-blank question\nEnter 'quit' when finished: ");
                         question = keyboard.nextLine();
 
                         if (question.equalsIgnoreCase("quit"))
-                            creatingFillInBlank = false;
+                            creatingQuestion = false;
 
                         else {
                             System.out.println("Type the answer to '" + question + "': ");
@@ -170,7 +169,7 @@ public class CreateQuiz {
                     questionArray = new JSONArray();
                     questionObject = new JSONObject();
 
-                    while (creatingMatching) {
+                    while (creatingQuestion) {
 
                         questionDetails = new JSONObject();
 
@@ -178,7 +177,7 @@ public class CreateQuiz {
                         question = keyboard.nextLine();
 
                         if (question.equalsIgnoreCase("quit"))
-                            creatingMatching = false;
+                            creatingQuestion = false;
                         else {
                             System.out.println("Enter the match to " + question);
                             answer = keyboard.nextLine();
@@ -199,19 +198,16 @@ public class CreateQuiz {
             System.out.println("Would you like to add another question type?(y/n): ");
             userPermission = keyboard.nextLine();
 
-            if (userPermission.equalsIgnoreCase("n"))
+            if (userPermission.equalsIgnoreCase("n")) {
+                System.out.println("goodbye");
                 creating = false;
+            }
             else
                 continue;
 
         }
 
         keyboard.close();
-
-    }
-
-    //main method to be run by User.java main(String[] args) method
-    public void createQuiz() {
 
     }
 
@@ -228,6 +224,7 @@ public class CreateQuiz {
         }
     }
 
+    //for testing purposes
     public static void main(String[] args) {
         new CreateQuiz().userInput();
     }
