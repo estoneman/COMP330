@@ -169,6 +169,28 @@ public class CreateQuiz {
                     questionArray = new JSONArray();
                     questionObject = new JSONObject();
 
+                    while (creatingMatching) {
+
+                        questionDetails = new JSONObject();
+
+                        System.out.println("Enter a term that you wish to match with another term\nEnter 'quit' when finished: ");
+                        question = keyboard.nextLine();
+
+                        if (question.equalsIgnoreCase("quit"))
+                            creatingMatching = false;
+                        else {
+                            System.out.println("Enter the match to " + question);
+                            answer = keyboard.nextLine();
+
+                            questionDetails.put(question, answer);
+                            questionArray.add(questionDetails);
+                        }
+                    }
+
+                    questionObject.put("matching", questionArray);
+
+                    writeToFile(MATCHING_PATH, questionObject);
+
                     break;
 
             }
