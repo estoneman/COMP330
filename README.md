@@ -18,3 +18,5 @@ For Windows systems, simply navigate to the start menu and right-click on the Wi
 
 # Notes
 We only have the ability to create a quiz. The quiz questions are put into the following format:
+
+![](JSON_Question_Model.png)
