@@ -17,6 +17,6 @@ export CLASSPATH=$CLASSPATH:/path/to/jar
 For Windows systems, simply navigate to the start menu and right-click on the Windows icon. Click on 'Search' and type in 'environment variables' and press enter. Once you have done that, a window will pop up with many options. Click on the button that says 'Environment Variables'. Next, navigate to system variables and click 'New'. The 'Variable name' will be 'CLASSPATH' and the 'Variable value' will be the path to which you saved JSON-Simple to. Once you are finished, continually click 'Ok' on each window as they disappear. You may need to restart your system in order for the changes to be set.
 
 # Notes
-We only have the ability to create a quiz. The quiz questions are put into the following format:
+The JSON files that we use are stored in this format:
 
 ![](JSON_Question_Model.png)
