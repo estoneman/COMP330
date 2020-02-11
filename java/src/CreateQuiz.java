@@ -59,6 +59,7 @@ public class CreateQuiz {
                         System.out.println("Enter the true/false question you would like to add\nEnter 'quit' to stop adding true/false questions: ");
                         question = keyboard.nextLine();
 
+                        //user will get out of creating true false questions if they enter 'quit' so they have full control
                         if (question.equalsIgnoreCase("quit"))
                             creatingTrueFalse = false;
 
@@ -75,7 +76,7 @@ public class CreateQuiz {
 
                     questionObject.put(qType, questionArray);//puts the key as "tf" and the value as the JSONArray of JSONObjects with questions and answer as key, value pair
 
-                    writeToFile(TRUE_FALSE_PATH, questionObject);
+                    writeToFile(TRUE_FALSE_PATH, questionObject);//writes the entire packed question object to the specified file
                     break;
 
                 case "mc":
@@ -83,7 +84,7 @@ public class CreateQuiz {
                     questionArray = new JSONArray();
                     questionObject = new JSONObject();
 
-                    arrayList = new ArrayList<String>();
+                    arrayList = new ArrayList<String>();//for checking duplicate options
 
                     while (creatingMultipleChoice) {
                         questionDetails = new JSONObject();
@@ -92,12 +93,14 @@ public class CreateQuiz {
                         System.out.println("Enter the multiple choice question you would like to add\nEnter 'quit' to stop adding multiple choice questions: ");
                         question = keyboard.nextLine();
 
+                        //this string will be used as the key in the key, value pair of each object within the array stored in multipleChoice.json
                         multipleChoiceKeyString = question;
 
                         if (question.equalsIgnoreCase("quit"))
                             creatingMultipleChoice = false;
 
                         else {
+                            //controls how many options the user wants to create
                             while (creatingOptions) {
 
                                 System.out.println("Enter option or enter nothing to stop adding options: ");
@@ -108,11 +111,9 @@ public class CreateQuiz {
                                 if (option.equals(""))
                                     creatingOptions = false;
                                 else {
-                                    multipleChoiceKeyString += " " + option;
+                                    multipleChoiceKeyString += " " + option;//concatenates option to the end of the question in order to fit our consistent question modeling
                                 }
                             }
-
-                            System.out.println(multipleChoiceKeyString);
 
                             System.out.println("Enter the answer to '" + question + "': ");
                             answer = keyboard.nextLine();
@@ -123,13 +124,13 @@ public class CreateQuiz {
                                 answer = keyboard.nextLine();
                             }
 
-                            questionDetails.put(multipleChoiceKeyString, answer);
-                            questionArray.add(questionDetails);
+                            questionDetails.put(multipleChoiceKeyString, answer);//packs the question and answer into its own unique JSONObject
+                            questionArray.add(questionDetails);//adds the above JSONObject to an array of JSONObjects
 
                         }
                     }
 
-                    questionObject.put(qType, questionArray);
+                    questionObject.put(qType, questionArray);//puts the key as "mc" and the value as the JSONArray of JSONObjects with questions and answer as key, value pair
 
                     writeToFile(MULTIPLE_CHOICE_PATH, questionObject);
                     break;
@@ -159,7 +160,7 @@ public class CreateQuiz {
 
                     }
 
-                    questionObject.put(qType, questionArray);//puts the key as "tf" and the value as the JSONArray of JSONObjects with questions and answer as key, value pair
+                    questionObject.put(qType, questionArray);//puts the key as "fb" and the value as the JSONArray of JSONObjects with questions and answer as key, value pair
 
                     writeToFile(FILL_IN_BLANK_PATH, questionObject);
                     break;
