@@ -13,23 +13,24 @@ public class CreateQuiz {
 
     FileWriter fileWriter;//single file writer that writes to all of our json files
 
-    Scanner keyboard = new Scanner(System.in);//for accessing user input via keyboard
-
     //method that asks user for input
     @SuppressWarnings("unchecked")
     public void userInput() {
+
+        Scanner keyboard = new Scanner(System.in);//for accessing user input via keyboard
+
         JSONObject questionDetails;
-        JSONObject questionObject = new JSONObject();
+        JSONObject questionObject;
         JSONArray questionArray = new JSONArray();
 
-        String qType = "";//question type that the user will type in
-        String answer, option, numOptions, numQuestions, userPermission;
+        //question type that the user will type in
+        String qType, answer, option, numOptions, numQuestions, userPermission;
         String question = "";//actual question the user will type in
         String multipleChoiceKeyString = "";
 
         boolean creating = true;//loop control for the entire creating process
-        boolean creatingQuestion = true;//loop control for creating each question
-        boolean creatingOptions = true;//loop control for creating options in multiple choice questions
+        boolean creatingQuestion;//loop control for creating each question
+        boolean creatingOptions;//loop control for creating options in multiple choice questions
 
         int loopCounter;//for number of options for multiple choice
 
