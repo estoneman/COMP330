@@ -7,10 +7,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/COMP330.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/COMP330.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/CreateQuiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/CreateQuiz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/CreateQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/CreateQuiz.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,6 +75,24 @@
             <path>
               <item name="COMP330" type="b2602c69:ProjectViewProjectNode" />
               <item name="COMP330" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="COMP330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="COMP330" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="COMP330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="COMP330" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="6.1.1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="COMP330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="COMP330" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="6.1.1" type="462c0819:PsiDirectoryNode" />
+              <item name="executionHistory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="COMP330" type="b2602c69:ProjectViewProjectNode" />
@@ -156,10 +170,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.34362417" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.34362417" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -169,7 +182,7 @@
       <window_info id="Build Variants" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="0" />
       <window_info anchor="bottom" id="TODO" order="1" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49932885" visible="true" weight="0.32841823" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49932885" visible="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50067115" side_tool="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="5" />
